@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:art="http://example.org/artwork#">
+
+    <!-- Define Classes -->
+    <owl:Class rdf:about="http://example.org/artwork#Artwork"/>
+    <owl:Class rdf:about="http://example.org/artwork#Artist"/>
+    <owl:Class rdf:about="http://example.org/artwork#ArtworkDimension"/>
+
+    <!-- Include Datatype Properties -->
+    <owl:DatatypeProperty rdf:about="http://example.org/artwork#hasId"/>
+    <owl:DatatypeProperty rdf:about="http://example.org/artwork#hasAccessionNumber"/>
+    <!-- ... (other datatype properties) -->
+
+    <!-- Include Object Properties -->
+    <owl:ObjectProperty rdf:about="http://example.org/artwork#hasArtist"/>
+    <owl:ObjectProperty rdf:about="http://example.org/artwork#hasMedium"/>
+    <!-- ... (other object properties) -->
+
+</rdf:RDF>
